@@ -1,6 +1,6 @@
 /obj/item/device/lighting/toggleable/flashlight
 	action_button_name = "Toggle Flashlight"
-	var/tick_cost = 0.4
+	var/tick_cost = 0.35
 	var/obj/item/weapon/cell/cell
 	var/suitable_cell = /obj/item/weapon/cell/small
 	dir = WEST

@@ -7,7 +7,7 @@
 	prescription = TRUE
 	active = FALSE
 	bad_type = /obj/item/clothing/glasses/powered
-	var/tick_cost = 1
+	var/tick_cost = 0.75
 	var/obj/item/weapon/cell/cell
 	var/suitable_cell = /obj/item/weapon/cell/small
 
