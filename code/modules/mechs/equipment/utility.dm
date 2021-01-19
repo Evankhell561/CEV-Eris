@@ -229,7 +229,7 @@
 
 /obj/item/mech_equipment/drill/Initialize()
 	. = ..()
-	drill_head = new /obj/item/weapon/material/drill_head(src, "steel")//You start with a basic steel head
+	drill_head = new /obj/item/weapon/material/drill_head(src, MATERIAL_STEEL)//You start with a basic steel head
 
 /obj/item/mech_equipment/drill/attack_self(var/mob/user)
 	. = ..()
@@ -331,6 +331,7 @@
 	max_water = 4000 //Good is gooder
 	icon_state = "mech_exting"
 	overlaylist = list()
+	spawn_frequency = 0
 
 /obj/item/weapon/extinguisher/mech/get_hardpoint_maptext()
 	return "[reagents.total_volume]/[max_water]"

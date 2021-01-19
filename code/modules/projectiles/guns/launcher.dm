@@ -3,13 +3,14 @@
 	desc = "A device that launches things."
 	icon = 'icons/obj/guns/launcher.dmi'
 	w_class = ITEM_SIZE_HUGE
-	flags =  CONDUCT
+	flags = CONDUCT
 	slot_flags = SLOT_BACK
 
-	var/release_force = 0
-	var/throw_distance = 10
 	muzzle_flash = 0
 	fire_sound_text = "a launcher firing"
+	bad_type = /obj/item/weapon/gun/launcher
+	var/release_force = 0
+	var/throw_distance = 10
 
 //This normally uses a proc on projectiles and our ammo is not strictly speaking a projectile.
 /obj/item/weapon/gun/launcher/can_hit(var/mob/living/target, var/mob/living/user)
